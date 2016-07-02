@@ -1,0 +1,505 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF524C481D27A41400785A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF524C471D27A41400785A7F /* AppDelegate.swift */; };
+		CF524C4A1D27A41400785A7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF524C491D27A41400785A7F /* ViewController.swift */; };
+		CF524C4D1D27A41400785A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF524C4B1D27A41400785A7F /* Main.storyboard */; };
+		CF524C4F1D27A41400785A7F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CF524C4E1D27A41400785A7F /* Assets.xcassets */; };
+		CF524C521D27A41400785A7F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF524C501D27A41400785A7F /* LaunchScreen.storyboard */; };
+		CF524C5D1D27A41400785A7F /* addressbookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF524C5C1D27A41400785A7F /* addressbookTests.swift */; };
+		CF524C681D27A41400785A7F /* addressbookUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF524C671D27A41400785A7F /* addressbookUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF524C591D27A41400785A7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF524C3C1D27A41400785A7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF524C431D27A41400785A7F;
+			remoteInfo = addressbook;
+		};
+		CF524C641D27A41400785A7F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF524C3C1D27A41400785A7F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF524C431D27A41400785A7F;
+			remoteInfo = addressbook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF524C441D27A41400785A7F /* addressbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = addressbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF524C471D27A41400785A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CF524C491D27A41400785A7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CF524C4C1D27A41400785A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CF524C4E1D27A41400785A7F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CF524C511D27A41400785A7F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF524C531D27A41400785A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF524C581D27A41400785A7F /* addressbookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = addressbookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF524C5C1D27A41400785A7F /* addressbookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addressbookTests.swift; sourceTree = "<group>"; };
+		CF524C5E1D27A41400785A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CF524C631D27A41400785A7F /* addressbookUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = addressbookUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF524C671D27A41400785A7F /* addressbookUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addressbookUITests.swift; sourceTree = "<group>"; };
+		CF524C691D27A41400785A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF524C411D27A41400785A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF524C551D27A41400785A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF524C601D27A41400785A7F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF524C3B1D27A41400785A7F = {
+			isa = PBXGroup;
+			children = (
+				CF524C461D27A41400785A7F /* addressbook */,
+				CF524C5B1D27A41400785A7F /* addressbookTests */,
+				CF524C661D27A41400785A7F /* addressbookUITests */,
+				CF524C451D27A41400785A7F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF524C451D27A41400785A7F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF524C441D27A41400785A7F /* addressbook.app */,
+				CF524C581D27A41400785A7F /* addressbookTests.xctest */,
+				CF524C631D27A41400785A7F /* addressbookUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF524C461D27A41400785A7F /* addressbook */ = {
+			isa = PBXGroup;
+			children = (
+				CF524C471D27A41400785A7F /* AppDelegate.swift */,
+				CF524C491D27A41400785A7F /* ViewController.swift */,
+				CF524C4B1D27A41400785A7F /* Main.storyboard */,
+				CF524C4E1D27A41400785A7F /* Assets.xcassets */,
+				CF524C501D27A41400785A7F /* LaunchScreen.storyboard */,
+				CF524C531D27A41400785A7F /* Info.plist */,
+			);
+			path = addressbook;
+			sourceTree = "<group>";
+		};
+		CF524C5B1D27A41400785A7F /* addressbookTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF524C5C1D27A41400785A7F /* addressbookTests.swift */,
+				CF524C5E1D27A41400785A7F /* Info.plist */,
+			);
+			path = addressbookTests;
+			sourceTree = "<group>";
+		};
+		CF524C661D27A41400785A7F /* addressbookUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CF524C671D27A41400785A7F /* addressbookUITests.swift */,
+				CF524C691D27A41400785A7F /* Info.plist */,
+			);
+			path = addressbookUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF524C431D27A41400785A7F /* addressbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF524C6C1D27A41400785A7F /* Build configuration list for PBXNativeTarget "addressbook" */;
+			buildPhases = (
+				CF524C401D27A41400785A7F /* Sources */,
+				CF524C411D27A41400785A7F /* Frameworks */,
+				CF524C421D27A41400785A7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = addressbook;
+			productName = addressbook;
+			productReference = CF524C441D27A41400785A7F /* addressbook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF524C571D27A41400785A7F /* addressbookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF524C6F1D27A41400785A7F /* Build configuration list for PBXNativeTarget "addressbookTests" */;
+			buildPhases = (
+				CF524C541D27A41400785A7F /* Sources */,
+				CF524C551D27A41400785A7F /* Frameworks */,
+				CF524C561D27A41400785A7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF524C5A1D27A41400785A7F /* PBXTargetDependency */,
+			);
+			name = addressbookTests;
+			productName = addressbookTests;
+			productReference = CF524C581D27A41400785A7F /* addressbookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CF524C621D27A41400785A7F /* addressbookUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF524C721D27A41400785A7F /* Build configuration list for PBXNativeTarget "addressbookUITests" */;
+			buildPhases = (
+				CF524C5F1D27A41400785A7F /* Sources */,
+				CF524C601D27A41400785A7F /* Frameworks */,
+				CF524C611D27A41400785A7F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF524C651D27A41400785A7F /* PBXTargetDependency */,
+			);
+			name = addressbookUITests;
+			productName = addressbookUITests;
+			productReference = CF524C631D27A41400785A7F /* addressbookUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF524C3C1D27A41400785A7F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = " 黄磊";
+				TargetAttributes = {
+					CF524C431D27A41400785A7F = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					CF524C571D27A41400785A7F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CF524C431D27A41400785A7F;
+					};
+					CF524C621D27A41400785A7F = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = CF524C431D27A41400785A7F;
+					};
+				};
+			};
+			buildConfigurationList = CF524C3F1D27A41400785A7F /* Build configuration list for PBXProject "addressbook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF524C3B1D27A41400785A7F;
+			productRefGroup = CF524C451D27A41400785A7F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF524C431D27A41400785A7F /* addressbook */,
+				CF524C571D27A41400785A7F /* addressbookTests */,
+				CF524C621D27A41400785A7F /* addressbookUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF524C421D27A41400785A7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF524C521D27A41400785A7F /* LaunchScreen.storyboard in Resources */,
+				CF524C4F1D27A41400785A7F /* Assets.xcassets in Resources */,
+				CF524C4D1D27A41400785A7F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF524C561D27A41400785A7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF524C611D27A41400785A7F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF524C401D27A41400785A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF524C4A1D27A41400785A7F /* ViewController.swift in Sources */,
+				CF524C481D27A41400785A7F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF524C541D27A41400785A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF524C5D1D27A41400785A7F /* addressbookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF524C5F1D27A41400785A7F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF524C681D27A41400785A7F /* addressbookUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF524C5A1D27A41400785A7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF524C431D27A41400785A7F /* addressbook */;
+			targetProxy = CF524C591D27A41400785A7F /* PBXContainerItemProxy */;
+		};
+		CF524C651D27A41400785A7F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF524C431D27A41400785A7F /* addressbook */;
+			targetProxy = CF524C641D27A41400785A7F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF524C4B1D27A41400785A7F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF524C4C1D27A41400785A7F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CF524C501D27A41400785A7F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF524C511D27A41400785A7F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF524C6A1D27A41400785A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CF524C6B1D27A41400785A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF524C6D1D27A41400785A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = addressbook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.addressbook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CF524C6E1D27A41400785A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = addressbook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.addressbook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CF524C701D27A41400785A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = addressbookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.addressbookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/addressbook.app/addressbook";
+			};
+			name = Debug;
+		};
+		CF524C711D27A41400785A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = addressbookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.addressbookTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/addressbook.app/addressbook";
+			};
+			name = Release;
+		};
+		CF524C731D27A41400785A7F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = addressbookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.addressbookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = addressbook;
+			};
+			name = Debug;
+		};
+		CF524C741D27A41400785A7F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = addressbookUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "-23.addressbookUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = addressbook;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF524C3F1D27A41400785A7F /* Build configuration list for PBXProject "addressbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF524C6A1D27A41400785A7F /* Debug */,
+				CF524C6B1D27A41400785A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF524C6C1D27A41400785A7F /* Build configuration list for PBXNativeTarget "addressbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF524C6D1D27A41400785A7F /* Debug */,
+				CF524C6E1D27A41400785A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF524C6F1D27A41400785A7F /* Build configuration list for PBXNativeTarget "addressbookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF524C701D27A41400785A7F /* Debug */,
+				CF524C711D27A41400785A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF524C721D27A41400785A7F /* Build configuration list for PBXNativeTarget "addressbookUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF524C731D27A41400785A7F /* Debug */,
+				CF524C741D27A41400785A7F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF524C3C1D27A41400785A7F /* Project object */;
+}
