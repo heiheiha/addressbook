@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Delete-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="addressbook" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="delete" customModule="addressbook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -25,6 +25,9 @@
                                 <rect key="frame" x="96" y="167" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="查看联系人"/>
+                                <connections>
+                                    <segue destination="SG9-5c-g80" kind="modal" id="Eda-W1-R9i"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="qgc-2y-i7w">
                                 <rect key="frame" x="105" y="257" width="89" height="30"/>
@@ -50,7 +53,7 @@
         <!--View Controller-->
         <scene sceneID="Nh4-dD-4zS">
             <objects>
-                <viewController id="RD2-Gc-a01" sceneMemberID="viewController">
+                <viewController id="RD2-Gc-a01" customClass="ViewController" customModule="addressbook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gIJ-6V-98r">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -111,6 +114,9 @@
                                 <rect key="frame" x="74" y="275" width="76" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="保存"/>
+                                <connections>
+                                    <action selector="save:" destination="RD2-Gc-a01" eventType="touchUpInside" id="dXn-2y-fTQ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="n7i-xm-cfZ">
                                 <rect key="frame" x="180" y="457" width="81" height="30"/>
@@ -123,6 +129,12 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="address" destination="jlM-1o-9U6" id="xkr-T3-EZ5"/>
+                        <outlet property="email" destination="6jN-AJ-Yr4" id="PE1-yf-Q1b"/>
+                        <outlet property="moblie" destination="HWS-Ho-bLw" id="6Yq-Ka-xAd"/>
+                        <outlet property="name" destination="Wzr-jg-daC" id="CrD-Dj-zta"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O65-Wl-TW8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -158,6 +170,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mvd-ZG-k8I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-124" y="1074"/>
+        </scene>
+        <!--History-->
+        <scene sceneID="Gh4-1m-Adu">
+            <objects>
+                <viewController id="SG9-5c-g80" customClass="history" customModule="addressbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ntw-RP-330">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="me9-V6-gZB">
+                                <rect key="frame" x="20" y="102" width="280" height="413"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qzp-cg-fPQ">
+                                <rect key="frame" x="96" y="55" width="110" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="查看全部联系人"/>
+                                <connections>
+                                    <action selector="hsee:" destination="SG9-5c-g80" eventType="touchUpInside" id="URO-73-Jlc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="yJR-aA-qeP">
+                                <rect key="frame" x="203" y="20" width="112" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="清空"/>
+                                <connections>
+                                    <action selector="hdelete:" destination="SG9-5c-g80" eventType="touchUpInside" id="tiM-WW-mzg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="va6-fp-eAA">
+                                <rect key="frame" x="20" y="20" width="84" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="返回主菜单"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="W0j-tU-jgY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="htext" destination="me9-V6-gZB" id="erq-F4-SeX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="K02-aG-8qz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="311" y="1074"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
