@@ -27,7 +27,6 @@ class history: UIViewController {
             let user = data[x]
             htext.text! += "姓名：" + String(user["name"]!) + " 电话：" + String(user["mobile"]!)  + " email：" + String(user["email"]!) +  " 地址：" + String(user["address"]!)+"\n"
         }
-
     }
 
     override func viewDidLoad() {

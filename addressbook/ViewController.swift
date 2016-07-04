@@ -46,7 +46,7 @@ class ViewController: UIViewController {
         if data.count > 0 {
             //获取最后一行数据显示
             let user = data[data.count - 1]
-            name?.text = user["moblie"] as? String
+            name?.text = user["name"] as? String
             moblie?.text = user["moblie"] as? String
             email?.text = user["email"] as? String
             address?.text = user["address"] as? String

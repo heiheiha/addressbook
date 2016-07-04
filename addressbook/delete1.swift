@@ -1,19 +1,21 @@
 //
-//  delete.swift
+//  delete1.swift
 //  addressbook
 //
-//  Created by  黄磊 on 16/7/2.
+//  Created by  黄磊 on 16/7/4.
 //  Copyright © 2016年  黄磊. All rights reserved.
 //
 
 import UIKit
 
-class delete: UIViewController {
+class delete1: UIViewController {
     
     var db:SQLiteDB!
     
-    @IBOutlet weak var htext1: UITextField!
-   
+    
+    @IBOutlet weak var htext2: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,23 +25,24 @@ class delete: UIViewController {
     }
     
     
-    @IBAction func hdeleteuser(sender: AnyObject) {
-        hdeleteuser()
+    @IBAction func hdeleteuser2(sender: AnyObject) {
+        hdeleteuser2()
     }
     
-    func hdeleteuser(){
-        let value=htext1.text!
+    
+    func hdeleteuser2(){
+        let value=htext2.text!
         //print("\(value)")
-        let sql = "delete from tuser where name='\(value)'"
-        //let sql = "delete from tuser where moblie='\(value)'"
+        //let sql = "delete from tuser where name='\(value)'"
+        let sql = "delete from tuser where mobile='\(value)'"
         let result = db.execute(sql)
         print(result)
     }
     
-        override func didReceiveMemoryWarning() {
+    override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
     
+
 }

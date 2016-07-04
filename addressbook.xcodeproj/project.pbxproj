@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CF18C8BE1D2A5CDB00063A15 /* delete1.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF18C8BD1D2A5CDB00063A15 /* delete1.swift */; };
 		CF524C481D27A41400785A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF524C471D27A41400785A7F /* AppDelegate.swift */; };
 		CF524C4A1D27A41400785A7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF524C491D27A41400785A7F /* ViewController.swift */; };
 		CF524C4D1D27A41400785A7F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF524C4B1D27A41400785A7F /* Main.storyboard */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		CF18C8BD1D2A5CDB00063A15 /* delete1.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = delete1.swift; sourceTree = "<group>"; };
 		CF524C441D27A41400785A7F /* addressbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = addressbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CF524C471D27A41400785A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CF524C491D27A41400785A7F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				CF6574721D27B666002610A1 /* Header.h */,
 				CF6574751D27C2E9002610A1 /* history.swift */,
 				CF6574771D27CD09002610A1 /* delete.swift */,
+				CF18C8BD1D2A5CDB00063A15 /* delete1.swift */,
 			);
 			path = addressbook;
 			sourceTree = "<group>";
@@ -226,6 +229,7 @@
 				TargetAttributes = {
 					CF524C431D27A41400785A7F = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = GGGKN3R8R5;
 					};
 					CF524C571D27A41400785A7F = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -294,6 +298,7 @@
 				CF65746F1D27B653002610A1 /* String-Extras.swift in Sources */,
 				CF65746D1D27B653002610A1 /* SQLiteDB.swift in Sources */,
 				CF65746E1D27B653002610A1 /* SQLTable.swift in Sources */,
+				CF18C8BE1D2A5CDB00063A15 /* delete1.swift in Sources */,
 				CF524C4A1D27A41400785A7F /* ViewController.swift in Sources */,
 				CF6574761D27C2E9002610A1 /* history.swift in Sources */,
 				CF524C481D27A41400785A7F /* AppDelegate.swift in Sources */,
@@ -438,10 +443,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = addressbook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-23.addressbook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = /Users/20141105065hl/Desktop/addressbook/addressbook/Header.h;
 			};
 			name = Debug;
@@ -450,10 +458,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = addressbook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "-23.addressbook";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = /Users/20141105065hl/Desktop/addressbook/addressbook/Header.h;
 			};
 			name = Release;
