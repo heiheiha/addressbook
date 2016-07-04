@@ -9,8 +9,10 @@
 import UIKit
 
 class delete: UIViewController {
+    
     var db:SQLiteDB!
     
+    @IBOutlet weak var htext1: UITextField!
    
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,9 +21,21 @@ class delete: UIViewController {
         //如果表还不存在则创建表（其中uid为自增主键）
         db.execute("create table if not exists tuser(uid integer primary key,name varchar(20),mobile varchar(20),email varcher(20),address varcher(20))")
         
-        
     }
     
+    
+    @IBAction func hdeleteuser(sender: AnyObject) {
+        hdeleteuser()
+    }
+    
+    func hdeleteuser(){
+        let value=htext1? .text
+        print(value)
+        let sql = "delete from tuser where name='\(value)'"
+
+        let result = db.execute(sql)
+        print(result)
+    }
     
         override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

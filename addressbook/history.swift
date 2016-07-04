@@ -26,9 +26,7 @@ class history: UIViewController {
             //获取最后一行数据显示
             let user = data[x]
             htext.text! += "姓名：" + String(user["name"]!) + " 电话：" + String(user["mobile"]!)  + " email：" + String(user["email"]!) +  " 地址：" + String(user["address"]!)+"\n"
-            
         }
-
 
     }
 
@@ -48,9 +46,6 @@ class history: UIViewController {
             let sql = "delete from tuser"
             let result = db.execute(sql)
             print(result)
-        
-        
-
     }
     
     func history (){
