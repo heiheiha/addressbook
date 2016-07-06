@@ -26,6 +26,10 @@ class delete1: UIViewController {
     
     
     @IBAction func hdeleteuser2(sender: AnyObject) {
+        if htext2.text==""
+        {
+            UIAlertView(title: "提示", message: "内容输入为空", delegate: nil, cancelButtonTitle: "确认").show()//tille标题message信息delegate自身为空cancelButtonTitle关闭按钮show显示对话框
+        }
         hdeleteuser2()
     }
     

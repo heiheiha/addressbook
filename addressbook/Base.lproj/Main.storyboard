@@ -286,14 +286,14 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="me9-V6-gZB">
-                                <rect key="frame" x="20" y="140" width="280" height="320"/>
+                                <rect key="frame" x="20" y="161" width="280" height="320"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Qzp-cg-fPQ">
-                                <rect key="frame" x="95" y="91" width="110" height="30"/>
+                                <rect key="frame" x="25" y="91" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="查看全部联系人"/>
                                 <connections>
@@ -314,6 +314,14 @@
                                 <state key="normal" title="清空"/>
                                 <connections>
                                     <action selector="hdelete:" destination="SG9-5c-g80" eventType="touchUpInside" id="tiM-WW-mzg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ps2-Kw-aEI">
+                                <rect key="frame" x="191" y="91" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="按条件查找"/>
+                                <connections>
+                                    <segue destination="JSL-oh-ydy" kind="modal" id="57d-bo-ooL"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -376,9 +384,68 @@
             </objects>
             <point key="canvasLocation" x="694" y="1074"/>
         </scene>
+        <!--Selete-->
+        <scene sceneID="II3-O3-iFg">
+            <objects>
+                <viewController id="JSL-oh-ydy" customClass="selete" customModule="addressbook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vYu-m3-1ys">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kpb-Jf-lT2">
+                                <rect key="frame" x="28" y="330" width="91" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="返回上一页"/>
+                                <connections>
+                                    <segue destination="SG9-5c-g80" kind="modal" id="zoH-0x-h9Q"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lWW-sA-Ev4">
+                                <rect key="frame" x="197" y="330" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="返回主菜单"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="modal" id="xfk-2C-n80"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" id="LIo-dh-T3Y">
+                                <rect key="frame" x="40" y="60" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="QPB-cY-rJ4">
+                                <rect key="frame" x="28" y="269" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="按姓名查询"/>
+                                <connections>
+                                    <action selector="selete:" destination="JSL-oh-ydy" eventType="touchUpInside" id="wRz-9F-xYw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="58e-Uc-xVG">
+                                <rect key="frame" x="182" y="269" width="98" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="按电话号查询"/>
+                                <connections>
+                                    <action selector="selete1:" destination="JSL-oh-ydy" eventType="touchUpInside" id="xXu-wH-ThU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="htext3" destination="LIo-dh-T3Y" id="JFE-W3-3Wg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LuY-qr-Ce8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1061" y="1074"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="uIc-7f-flR"/>
-        <segue reference="5LN-ms-Tsx"/>
+        <segue reference="dGB-st-aZv"/>
+        <segue reference="zoH-0x-h9Q"/>
+        <segue reference="xfk-2C-n80"/>
     </inferredMetricsTieBreakers>
 </document>
