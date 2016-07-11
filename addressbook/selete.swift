@@ -10,11 +10,7 @@ import UIKit
 
 class selete: UIViewController {
     var db:SQLiteDB!
-    
-    
     @IBOutlet weak var htext3: UITextView!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -23,14 +19,24 @@ class selete: UIViewController {
         db.execute("create table if not exists tuser(uid integer primary key,name varchar(20),mobile varchar(20),email varcher(20),address varcher(20))")
     }
     
-    
     @IBAction func selete(sender: AnyObject) {
-        sel()
-        
+        if htext3.text==""
+        {
+            UIAlertView(title: "提示", message: "内容输入为空", delegate: nil, cancelButtonTitle: "确认").show()//tille标题message信息delegate自身为空cancelButtonTitle关闭按钮show显示对话框
+        }else
+        {
+            sel()
+        }
     }
     
     @IBAction func selete1(sender: AnyObject) {
-        sele()
+        if htext3.text==""
+        {
+            UIAlertView(title: "提示", message: "内容输入为空", delegate: nil, cancelButtonTitle: "确认").show()//tille标题message信息delegate自身为空cancelButtonTitle关闭按钮show显示对话框
+        }else
+        {
+            sele()
+        }
     }
     
     func sel(){
@@ -60,6 +66,5 @@ class selete: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 }
 

@@ -9,9 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-     var db:SQLiteDB!
-    
+    var db:SQLiteDB!
     @IBOutlet weak var name: UITextField!
     @IBOutlet weak var moblie: UITextField!
     @IBOutlet weak var email: UITextField!
@@ -22,13 +20,8 @@ class ViewController: UIViewController {
         db = SQLiteDB.sharedInstance()
         //如果表还不存在则创建表（其中uid为自增主键）
         db.execute("create table if not exists tuser(uid integer primary key,name varchar(20),mobile varchar(20),email varcher(20),address varcher(20))")
-
         //initUser()
     }
-    
-    
-    
-    
     
     @IBAction func save(sender: AnyObject) {
         if name.text==""||moblie.text==""||email.text==""||address.text==""
@@ -38,7 +31,6 @@ class ViewController: UIViewController {
         {
             saveUser()
         }
-        
     }
     
     func initUser() {
@@ -70,7 +62,5 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
 

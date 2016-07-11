@@ -7,20 +7,12 @@
 //
 
 import UIKit
-
 class history: UIViewController {
-
     @IBOutlet weak var htext: UITextView!
-    
-    
-    
     var db:SQLiteDB!
-    
     @IBAction func hsee(sender: UIButton) {
         htext.text=""
-
         let data = db.query("select * from tuser")
-
         for var x=0;x<data.count;x++
         {
             //获取最后一行数据显示
@@ -35,28 +27,16 @@ class history: UIViewController {
         db = SQLiteDB.sharedInstance()
         //如果表还不存在则创建表（其中uid为自增主键）
         db.execute("create table if not exists tuser(uid integer primary key,name varchar(20),mobile varchar(20),email varcher(20),address varcher(20))")
-        
         // initUser()
     }
     
-    
-
     @IBAction func hdelete(sender: AnyObject) {
             let sql = "delete from tuser"
             let result = db.execute(sql)
             print(result)
     }
-    
-    func history (){
-       
-    }
-    
-    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    
-
 }

@@ -9,13 +9,8 @@
 import UIKit
 
 class delete1: UIViewController {
-    
     var db:SQLiteDB!
-    
-    
     @IBOutlet weak var htext2: UITextField!
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -24,7 +19,6 @@ class delete1: UIViewController {
         db.execute("create table if not exists tuser(uid integer primary key,name varchar(20),mobile varchar(20),email varcher(20),address varcher(20))")
     }
     
-    
     @IBAction func hdeleteuser2(sender: AnyObject) {
         if htext2.text==""
         {
@@ -32,7 +26,6 @@ class delete1: UIViewController {
         }
         hdeleteuser2()
     }
-    
     
     func hdeleteuser2(){
         let value=htext2.text!
@@ -47,6 +40,4 @@ class delete1: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
 }
