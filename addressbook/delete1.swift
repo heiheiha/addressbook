@@ -7,7 +7,6 @@
 //
 
 import UIKit
-
 class delete1: UIViewController {
     var db:SQLiteDB!
     @IBOutlet weak var htext2: UITextField!

@@ -23,6 +23,7 @@
 		CF5353EC1D338238009807C5 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF5353EB1D338238009807C5 /* 5.jpg */; };
 		CF5353EE1D338240009807C5 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF5353ED1D338240009807C5 /* 8.jpg */; };
 		CF5353F01D338243009807C5 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF5353EF1D338243009807C5 /* 7.jpg */; };
+		CF622A651D361D0C00514B9E /* update.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF622A641D361D0C00514B9E /* update.swift */; };
 		CF65746D1D27B653002610A1 /* SQLiteDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65746A1D27B653002610A1 /* SQLiteDB.swift */; };
 		CF65746E1D27B653002610A1 /* SQLTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65746B1D27B653002610A1 /* SQLTable.swift */; };
 		CF65746F1D27B653002610A1 /* String-Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF65746C1D27B653002610A1 /* String-Extras.swift */; };
@@ -73,6 +74,7 @@
 		CF5353EB1D338238009807C5 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
 		CF5353ED1D338240009807C5 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		CF5353EF1D338243009807C5 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		CF622A641D361D0C00514B9E /* update.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = update.swift; sourceTree = "<group>"; };
 		CF65746A1D27B653002610A1 /* SQLiteDB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLiteDB.swift; sourceTree = "<group>"; };
 		CF65746B1D27B653002610A1 /* SQLTable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SQLTable.swift; sourceTree = "<group>"; };
 		CF65746C1D27B653002610A1 /* String-Extras.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String-Extras.swift"; sourceTree = "<group>"; };
@@ -155,6 +157,7 @@
 				CF6574771D27CD09002610A1 /* delete.swift */,
 				CF18C8BD1D2A5CDB00063A15 /* delete1.swift */,
 				CF0ED57C1D2A81DD009CA1D4 /* selete.swift */,
+				CF622A641D361D0C00514B9E /* update.swift */,
 			);
 			path = addressbook;
 			sourceTree = "<group>";
@@ -331,6 +334,7 @@
 			files = (
 				CF6574781D27CD09002610A1 /* delete.swift in Sources */,
 				CF65746F1D27B653002610A1 /* String-Extras.swift in Sources */,
+				CF622A651D361D0C00514B9E /* update.swift in Sources */,
 				CF65746D1D27B653002610A1 /* SQLiteDB.swift in Sources */,
 				CF65746E1D27B653002610A1 /* SQLTable.swift in Sources */,
 				CF0ED57D1D2A81DD009CA1D4 /* selete.swift in Sources */,
